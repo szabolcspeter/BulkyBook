@@ -11,7 +11,11 @@ Since the application has been implemented on my Arch Linux box (I prefer using 
       
       docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=SqlServer12345678' -p 1433:1433 -v sqlvolume:/var/opt/mssql -d --name sqlserver mcr.microsoft.com/mssql/server:2019-latest
 
-    Step 2) run the application
+    Step 2) create DB
+    
+        cd BulkyBookWeb && dotnet ef database update
+    
+    Step 3) 
 
-        cd BulkyBookWeb && dotnet watch run
+        dotnet watch run
     
