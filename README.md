@@ -1,8 +1,13 @@
 # BulkyBook
-Simple MVC project (.NET6)
+ASP.NET MVC project (.NET6)
 
-This is a simplest of simplest .NET6 MVC project implementing CRUD operations.
+Main focus was on the below patterns and the relationship between them:
 
+ - Repository Pattern
+ - Unit Of Work Pattern 
+
+
+Also, "Admin" and "Customer" areas have been configured and used.
 
 
 Since the application has been implemented on my Arch Linux box (I prefer using Linux), you can run it like this:
